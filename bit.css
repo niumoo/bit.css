@@ -8,11 +8,21 @@
     --dark: #262626;
     --moredark: #363636;
     --link: royalblue;
+    --border-radius: 8px;
     border-top: 5px solid var(--dark);
     line-height: 1.6em;
     font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei" !important;
     font-size: 16px;
     color: var(--dark);
+}
+
+body {
+    background-color: var(--light);
+    margin: 0;
+    max-width: 950px;
+    padding: 0 20px 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -29,13 +39,14 @@ button, input {
 input {
     border: 1px solid var(--dark);
     background-color: var(--lesslight);
-    border-radius: .25em;
+    border-radius: var(--border-radius);
     padding: .5em;
 }
 
 code {
     background-color: var(--lesslight);
-    padding: .2em;
+    padding: .2em .3em;
+    border-radius: var(--border-radius);
 }
 
 pre {
@@ -43,19 +54,11 @@ pre {
     margin: 0.5em 0 0.5em 0;
     padding: .5em .8em;
     overflow: auto;
+    border-radius: var(--border-radius);
 }
 pre code {
     font-family: consolas,Menlo,"PingFang SC","Microsoft YaHei",sans-serif;
     font-size: .9em;
-}
-
-body {
-    background-color: var(--light);
-    margin: 0;
-    max-width: 850px;
-    padding: 0 20px 20px 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 a {
@@ -73,6 +76,7 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: var(--border-radius);;
 }
 blockquote{
     padding: .5em;
@@ -91,7 +95,7 @@ button, .button, input[type=submit] {
     color: var(--light);
     text-align: center;
     padding: .5em;
-    border-radius: .25em;
+    border-radius: var(--border-radius);
     text-decoration: none;
     border: none;
     cursor: pointer;
