@@ -5,21 +5,23 @@
     color-scheme: light dark;
     --light: #fff;
     --lesslight: #efefef;
-    --dark: #262626;
-    --moredark: #363636;
+    --dark: rgb(31, 31, 31);
+    --moredark: rgb(30, 30, 30);
     --link: royalblue;
     --border-radius: 8px;
     border-top: 5px solid var(--dark);
     line-height: 1.6em;
-    font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei" !important;
-    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serifsans-serif !important;
+    font-size: 18px;
     color: var(--dark);
+    word-wrap: break-word;
+    /*word-break: break-all;*/
 }
 
 body {
     background-color: var(--light);
     margin: 0;
-    max-width: 950px;
+    max-width: 800px;
     padding: 0 20px 20px 20px;
     margin-left: auto;
     margin-right: auto;
@@ -28,10 +30,16 @@ body {
 h1 {
     line-height: 1em;
 }
+
 h1,h2,h3,h4,h5{
     color: var(--moredark);
+    font-family: overpass, sans-serif;
 }
 
+li p {
+    margin-top: 0em;
+    margin-bottom: .5em;
+}
 button, input {
     font-size: 1em; /* Override browser default font shrinking*/
 }
@@ -51,9 +59,10 @@ code {
 
 pre {
     background-color: var(--lesslight);
-    margin: 0.5em 0 0.5em 0;
+    /*margin: 0.5em 0 0.5em 0;*/
     padding: .5em .8em;
     overflow: auto;
+    font-size: .9em;
     border-radius: var(--border-radius);
 }
 pre code {
@@ -64,10 +73,12 @@ pre code {
 a {
     outline: none;
     color: var(--dark);
+    text-decoration-skip-ink: auto;
+    text-underline-offset: .3em;
+    text-decoration-thickness: 1px;  /* 控制线的粗细 */
 }
 
 a:hover {
-    text-decoration-color: var(--link);
     background-color: var(--lesslight);
 }
 
@@ -116,6 +127,7 @@ th, td {
     border: 1px solid var(--lesslight);
     padding: 5px 8px;
     text-align: left;
+    font-size: .9em;
 }
 th {
     background-color: var(--lesslight);
