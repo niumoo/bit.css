@@ -11,7 +11,7 @@
     --border-radius: 8px;
     border-top: 5px solid var(--dark);
     letter-spacing:.04rem;
-    line-height: 1.6em;
+    line-height: 2em;
     font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serifsans-serif !important;
     font-size: 16px;
     color: var(--dark);
@@ -22,7 +22,7 @@
 body {
     background-color: var(--light);
     margin: 0;
-    max-width: 850px;
+    max-width: 880px;
     padding: 0 20px 20px 20px;
     margin-left: auto;
     margin-right: auto;
@@ -76,7 +76,7 @@ pre {
 }
 pre code {
     font-family: consolas,Menlo,"PingFang SC","Microsoft YaHei",sans-serif;
-    font-size: .9em;
+    line-height: 1.6em;
 }
 
 a {
