@@ -158,6 +158,11 @@ button + button, .button + .button, input[type=submit] + input[type=submit] {
     padding: 5px 10px 5px 10px;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 10px;
+}
+.home:hover{
+    background-color: var(--moredark);
+    color: var(--lesslight);
 }
 
 /* Desktop sizes */
