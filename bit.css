@@ -155,7 +155,7 @@ button + button, .button + .button, input[type=submit] + input[type=submit] {
     background-color: var(--dark);
     color: var(--light);
     margin-top: 20px;
-    padding: 10x;
+    padding: 6px 10px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 10px;
