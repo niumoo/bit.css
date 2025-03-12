@@ -12,7 +12,7 @@
     border-top: 5px solid var(--dark);
     letter-spacing:.04rem;
     line-height: 1.7em;
-    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serifsans-serif !important;
+    font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei" !important;
     font-size: 16px;
     color: var(--dark);
     word-wrap: break-word;
